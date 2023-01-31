@@ -38,8 +38,20 @@ getData('https://pokeapi.co/api/v2/pokemon')
       </router-link>
     </div>
     <div class="mt-2">
-      <button class="btn btn-outline-primary me-2" :disabled="!data.previous" @click="getData(data.previous)">Previous</button>
-      <button class="btn btn-outline-primary" :disabled="!data.next" @click="getData(data.next)">Next</button>
+      <button
+          class="btn btn-outline-primary me-2"
+          :disabled="!data.previous"
+          @click="getData(data.previous)"
+      >
+        Previous
+      </button>
+      <button
+          class="btn btn-outline-primary"
+          :disabled="!data.next"
+          @click="getData(data.next)"
+      >
+        Next
+      </button>
     </div>
   </div>
 </template>
